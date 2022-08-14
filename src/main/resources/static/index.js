@@ -93,5 +93,12 @@ angular.module('app', ['ngStorage']).controller('indexController', function ($sc
             });
     }
 
+    $scope.removeFromCarts = function (productId) {
+        $http.post('http://localhost:8189/app/api/v1/carts/removeproduct' + productId, $localStorage.cartName)
+            .then(function (response) {
+                $scope.loadCart();
+            });
+    }
+
     $scope.loadProducts();
 });
