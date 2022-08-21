@@ -2,14 +2,9 @@ package com.geekbrains.spring.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
-@EnableCaching
 public class SpringWebApplication {
-	// Домашнее задание:
-	// Вспомнить\разобраться с кодом
-	// Реализовать методы Cart, которые мы не реализовали на уроке
 
 	// Не знаю какой был пароль, поставил свой - Passw0rd
 
